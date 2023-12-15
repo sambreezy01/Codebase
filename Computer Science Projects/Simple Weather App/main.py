@@ -18,4 +18,14 @@ def get_weather_data(location):
         print('Failed to fetch weather data...')
         return None
 
-# next function goes here...
+def display_weather_data(data):
+    if data:
+        print('Weather data for', data['name'])
+        print('\tTemperature:', data['main']['temp'], ' C')
+        print('\tDescription:', data['weather'][0]['description'])
+        print('\tHumidity:', data['main']['humidity'], '%')
+        print('\tWind Speed:', data['wind']['speed'], 'm/s')
+    else:
+        print('No data to display...')
+
+# run program from here...
