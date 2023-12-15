@@ -28,4 +28,6 @@ def display_weather_data(data):
     else:
         print('No data to display...')
 
-# run program from here...
+location = input('Enter city name: ')
+weather_data = get_weather_data(location)
+display_weather_data(weather_data)
