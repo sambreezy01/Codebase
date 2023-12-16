@@ -78,3 +78,6 @@ function lifeInWeeks(age) {
     console.log("You have " + x + " days, " + y + " weeks, and " + z + " months left.");
 }
 lifeInWeeks(56);
+
+var random_number = Math.floor(Math.random() * 5) + 1;
+console.log('\nrandom_number: ' + random_number);
