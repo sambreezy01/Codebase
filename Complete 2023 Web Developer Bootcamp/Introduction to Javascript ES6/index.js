@@ -65,3 +65,16 @@ console.log('\ndoubled -->');
 for (let i = 0; i < 5; i++) {
     console.log('doubled i: ' + getDoubleVal(i));
 }
+
+console.log();
+function lifeInWeeks(age) {
+    var years_left = 90 - age;
+    // z --> months
+    var z = years_left * 12;
+    // y --> weeks
+    var y = years_left * 52;
+    // x --> days
+    var x = years_left * 365;
+    console.log("You have " + x + " days, " + y + " weeks, and " + z + " months left.");
+}
+lifeInWeeks(56);
