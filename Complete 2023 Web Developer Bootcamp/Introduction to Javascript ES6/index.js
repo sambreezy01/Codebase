@@ -37,10 +37,18 @@ console.log('my_name.length: ' + my_name.length)
 console.log('my_name.slice(0, 4): ' + my_name.slice(0, 4));
 
 function sayHello(name) {
+    name = name.toLowerCase();
     var first_char = name.slice(0, 1);
     var uppercase_first_char = first_char.toUpperCase();
     var remaining_name = name.slice(1, name.length);
     var greeting_name = uppercase_first_char + remaining_name;
     console.log('\nHello, ' + greeting_name);
 }
-sayHello('sami');
+sayHello('sAmI');
+
+a = 2;
+b = 5;
+console.log('\na: ' + a);
+console.log('b: ' + b);
+result = a + b * 2;
+console.log('result: ' + result);
