@@ -52,3 +52,16 @@ console.log('\na: ' + a);
 console.log('b: ' + b);
 result = a + b * 2;
 console.log('result: ' + result);
+
+console.log('\noriginal -->');
+console.log();
+for (let i = 0; i < 5; i++) {
+    console.log('i: ' + i);
+}
+function getDoubleVal(value) {
+    return value * 2;
+}
+console.log('\ndoubled -->');
+for (let i = 0; i < 5; i++) {
+    console.log('doubled i: ' + getDoubleVal(i));
+}
